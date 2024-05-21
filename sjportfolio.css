@@ -127,7 +127,7 @@ padding: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
-    position: absolute;
+    position: relative;
     top: 144%;
     right: 10%;
   }
