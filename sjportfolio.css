@@ -93,6 +93,7 @@ padding: 4px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+/*now shifted to about.html*/
 .aboutsection{
     margin: auto;
     width: 90vw;
@@ -141,6 +142,13 @@ padding: 4px;
 .skillset{
   background-color:transparent;
 }
+.skill-heading{
+  font-size: 2rem;
+  color:  rgb(50, 50, 92);
+  margin-top: 80px;
+  margin-bottom:30px;
+  margin-left: 50px;
+} 
   .skills-section {
     display: flex;
     flex-wrap: wrap;
