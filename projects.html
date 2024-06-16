@@ -1,125 +1,107 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Simarjeet_MyProjects</title>
     <link rel="icon" href="simarxjeet1.jpg" type="image/x-icon" />
-
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(218, 218, 247);
-        color:rgb(50, 50, 92);
-        font-family: "Poppins", sans-serif;
-        animation: opacity 3s forwards;
-      }
-      @keyframes opacity {
-        from {
-          opacity: 0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        to {
-          opacity: 1;
+        body {
+            background-color: rgb(218, 218, 247);
+            color: rgb(50, 50, 92);
+            font-family: "Poppins", sans-serif;
+            animation: opacity 3s forwards;
         }
-      }
-}
-      
-.projects {
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-      .projectcards{
-    width: calc(33.333% - 40px);
-  margin: 20px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  background-color: white; /*  background for destination cards */
-  overflow: hidden; /* Hide overflowing elements to prevent image glitches */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for smooth effects */
-}
-
-.projectcards img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.projectcards h3 {
-  margin-top: 10px;
-  font-size: 1.4rem;
-}
-
-.projectcards p {
-  margin-top: 8px;
-  font-size: 1rem;
-}
-
-.projectcards a {
-  display: block;
-  margin-top: 10px;
-  color: #00bfff; /* Electric Blue color for "demo" link */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Hover styles */
-.projectcards:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Increased shadow on hover */
-  transform: scale(1.05); /* Slightly zoom in on hover */
-  background-color: grey; /* Slightly darker background on hover */
-}
-      @media (max-width: 900px) {
-    .projectcards {
-        width: calc(50% - 40px);
-    }
-}
-
-@media (max-width: 600px) {
-    .projectcards {
-        width: 100%;
-    }
-}
-      
+        @keyframes opacity {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+        .projectcards {
+            flex: 1 1 calc(33.333% - 40px);
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            background-color: white;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .projectcards img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .projectcards h3 {
+            margin-top: 10px;
+            font-size: 1.4rem;
+        }
+        .projectcards p {
+            margin-top: 8px;
+            font-size: 1rem;
+        }
+        .projectcards a {
+            display: block;
+            margin-top: 10px;
+            color: #00bfff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .projectcards:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+            background-color: grey;
+        }
+        @media (max-width: 900px) {
+            .projectcards {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 600px) {
+            .projectcards {
+                flex: 1 1 100%;
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="projects">
-    <div class="projectcards">
-
-        <img src="jkprojectpreview.jpeg" alt="project 1" />
-        <h3>J&K tourism Website</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur ad aliquam?
-        </p>
-        <a href="https://simarjeetxsingh.github.io/J-K-Tourism-Website1/" target="_blank" rel="noopener noreferrer">View Demo</a>
+        <div class="projectcards">
+            <img src="jkprojectpreview.jpeg" alt="project 1" />
+            <h3>J&K tourism Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur ad aliquam?</p>
+            <a href="https://simarjeetxsingh.github.io/J-K-Tourism-Website1/" target="_blank" rel="noopener noreferrer">View Demo</a>
+        </div>
+        <div class="projectcards">
+            <img src="Akinatorprojectlogo.png" alt="project 2" />
+            <h3>Marvel Movie Character Creator!</h3>
+            <p>A simple and fun script designed to match you with a character from the Avengers based on your answers to a series of questions.</p>
+            <a href="https://simarjeetxsingh.github.io/Akinator_style_game/" target="_blank" rel="noopener noreferrer">View Demo</a>
+        </div>
+        <div class="projectcards">
+            <img src="movie_recommendation.jpeg" alt="project 3" />
+            <h3>Movie Recommendation System</h3>
+            <h5>Machine Learning</h5>
+            <p>ONGOING...</p>
+            <a href="https://github.com/SimarjeetxSingh/SimarjeetxSingh" target="_blank" rel="noopener noreferrer">View Demo</a>
+        </div>
     </div>
-          <div class="projectcards">
-        <img src="Akinatorprojectlogo.png" alt="project 2" />
-        <h3>Marvel Movie Character Creator!</h3>
-        <p>
-          A simple and fun script designed to match you with a character from the Avengers based on your answers to a series of questions.
-        </p>
-        <a href="https://simarjeetxsingh.github.io/Akinator_style_game/" target="_blank" rel="noopener noreferrer">View Demo</a>
-          </div>
-            <div class="projectcards">
-        <img src=".jpeg" alt="project 3" />
-        <h3>Movie Recommendation System</h3>
-        <h5>Machine Learning</h5>
-        <p>
-          ONGOING...
-        </p>
-        <a href="https://github.com/SimarjeetxSingh/SimarjeetxSingh" target="_blank" rel="noopener noreferrer">View Demo</a>
-      
-  </div>
-    </div>
-  </body>
+</body>
 </html>
