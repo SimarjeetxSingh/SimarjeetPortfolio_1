@@ -36,7 +36,7 @@
 
 }
       .projectcards{
-  width: 300px;
+    width: calc(33.333% - 40px);
   margin: 20px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -76,6 +76,17 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Increased shadow on hover */
   transform: scale(1.05); /* Slightly zoom in on hover */
   background-color: grey; /* Slightly darker background on hover */
+}
+      @media (max-width: 900px) {
+    .projectcards {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .projectcards {
+        width: 100%;
+    }
 }
       
     </style>
