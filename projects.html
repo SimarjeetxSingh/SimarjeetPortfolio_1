@@ -33,7 +33,7 @@
             padding: 20px;
         }
         .projectcards {
-            flex: 1 1 30%; /* Adjusted to ensure proper spacing */
+            flex: 1 1 30%;
             max-width: 30%;
             margin: 10px;
             padding: 10px;
@@ -42,6 +42,8 @@
             background-color: white;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 0;
         }
         .projectcards img {
             width: 100%;
@@ -82,68 +84,53 @@
             }
         }
 
-        .glow-on-hover {
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
+        .glow-on-hover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+        .glow-on-hover:hover:before {
+            opacity: 1;
+        }
+        .glow-on-hover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
     </style>
 </head>
 <body>
-    <div class="projects glow-on-hover">
-        <div class="projectcards">
+    <div class="projects">
+        <div class="projectcards glow-on-hover">
             <img src="jkprojectpreview.jpeg" alt="project 1" />
             <h3>J&K tourism Website</h3>
             <h5>WEB</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur ad aliquam?</p>
             <a href="https://simarjeetxsingh.github.io/J-K-Tourism-Website1/" target="_blank" rel="noopener noreferrer">View Demo</a>
         </div>
-         <div class="projectcards glow-on-hover">
+        <div class="projectcards glow-on-hover">
             <img src="movieproject.jpg" alt="project 2" />
             <h3>Movie Recommendation System</h3>
             <h5>Machine Learning</h5>
@@ -157,14 +144,13 @@
             <p>ONGOING...</p>
             <a href="https://github.com/SimarjeetxSingh/SimarjeetPortfolio_1" target="_blank" rel="noopener noreferrer">View Demo</a>
         </div>
-        <div class="projectcards">
+        <div class="projectcards glow-on-hover">
             <img src="python3.png" alt="project 4" />
             <h3>Akinator, Marvel Movie Character Creator!</h3>
             <h5>Python</h5>
             <p>A simple and fun script designed to match you with a character from the Avengers based on your answers to a series of questions.</p>
             <a href="https://simarjeetxsingh.github.io/Akinator_style_game/" target="_blank" rel="noopener noreferrer">View Demo</a>
         </div>
-       
     </div>
 </body>
 </html>
