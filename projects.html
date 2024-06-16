@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +33,8 @@
             padding: 20px;
         }
         .projectcards {
-            flex: 1 1 calc(33.333% - 40px);
+            flex: 1 1 30%; /* Adjusted to ensure proper spacing */
+            max-width: 30%;
             margin: 10px;
             padding: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -71,12 +71,14 @@
         }
         @media (max-width: 900px) {
             .projectcards {
-                flex: 1 1 calc(50% - 40px);
+                flex: 1 1 45%;
+                max-width: 45%;
             }
         }
         @media (max-width: 600px) {
             .projectcards {
                 flex: 1 1 100%;
+                max-width: 100%;
             }
         }
     </style>
