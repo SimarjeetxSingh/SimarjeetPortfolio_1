@@ -106,7 +106,7 @@ padding: 4px;
   margin-bottom:30px;
   margin-left: 50px;
 } 
-.about-content .about-content p{
+.about-content .about-content li{
   margin-left: 50px;
   color: rgb(62, 87, 108);
   font-size: 1.2rem;
