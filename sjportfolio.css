@@ -114,7 +114,7 @@ padding: 4px;
   margin-top: 6px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*.about_page_button{
+.about_page_button{
     width: 15vw;
     padding: 10px;
     margin: 10px;
@@ -136,7 +136,7 @@ padding: 4px;
   button:hover {
     background-color: rgb(92, 120, 125);
   }
-  */
+  
 .skillset{
   background-color:transparent;
   padding: 20px;
