@@ -106,9 +106,8 @@ padding: 4px;
   margin-bottom:30px;
   margin-left: 50px;
 } 
-.about-content{
+.about-content .about-content p{
   margin-left: 50px;
-    line-height: 25px;
   color: rgb(62, 87, 108);
   font-size: 1.2rem;
   margin-top: 6px;
@@ -126,9 +125,9 @@ padding: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
-    position: absolute;
+   /* position: absolute;
     top: 130%;
-    right: 10%;
+    right: 10%; */
   }
   .about_page_button > a{
   color: #fdfcfc;
