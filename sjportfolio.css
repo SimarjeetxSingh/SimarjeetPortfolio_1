@@ -108,9 +108,7 @@ padding: 4px;
 } 
 .about-content{
   margin-left: 50px;
-}
-.about-content p{
-  line-height: 30px;
+    line-height: 25px;
   color: rgb(62, 87, 108);
   font-size: 1.2rem;
   margin-top: 6px;
