@@ -26,68 +26,81 @@
             }
         }
         .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 20px;
-        }
-        .projectcards {
-            flex: 1 1 30%; /* Adjusted to ensure proper spacing */
-            max-width: 20%;
-            max-height:20%;
-            margin: 10px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            border-radius: 8px;
-            background-color: #BFB8DA;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .projectcards img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .projectcards h3 {
-            margin-top: 10px;
-            font-size: 1.2rem;
-        }
-         .projectcards h5{
-            margin-top: 10px;
-            font-size: 1rem;
-        }
-        .projectcards p {
-            margin-top: 8px;
-            font-size: 0.8rem;
-            
-        }
-        .projectcards a {
-            display: block;
-            margin-top: 10px;
-            color: #00bfff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .projectcards:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-            transform: scale(1.05);
-            background-color: #E8B7D4 ;
-        }
-        @media (max-width: 900px) {
-            .projectcards {
-                flex: 1 1 45%;
-                max-width: 45%;
-            }
-        }
-        @media (max-width: 600px) {
-            .projectcards {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
 
+.projectcards {
+    flex: 1 1 30%; /* Ensure proper spacing */
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectcards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.projectcards h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.projectcards h5 {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.projectcards p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #333;
+    flex-grow: 1;
+}
+
+.projectcards a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.projectcards:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    background-color: #f8f8f8;
+}
+
+@media (max-width: 900px) {
+    .projectcards {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .projectcards {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
        /* .glow-on-hover {
     width: 220px;
     height: 50px;
