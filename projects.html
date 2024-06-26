@@ -26,189 +26,144 @@
             }
         }
         .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.projectcards {
-    flex: 1 1 30%; /* Ensure proper spacing */
-    max-width: 300px;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    background-color: #fff;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.projectcards img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.projectcards h3 {
-    margin: 10px 0;
-    font-size: 1.4rem;
-}
-
-.projectcards h5 {
-    margin: 8px 0;
-    font-size: 1.2rem;
-    color: #666;
-}
-
-.projectcards p {
-    margin: 8px 0;
-    font-size: 0.9rem;
-    color: #333;
-    flex-grow: 1;
-}
-
-.projectcards a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #00bfff;
-    text-decoration: none;
-    font-weight: bold;
-    align-self: flex-start;
-}
-
-.projectcards:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-    background-color: #f8f8f8;
-}
-
-@media (max-width: 900px) {
-    .projectcards {
-        flex: 1 1 45%;
-        max-width: 45%;
-    }
-}
-
-@media (max-width: 600px) {
-    .projectcards {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-       /* .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .projectcards {
+            flex: 1 1 20%;
+            max-width: 20%;
+            height: 400px; /* Fixed height for equal sizes */
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            background-color: #fff;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .projectcards img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .projectcards h3 {
+            margin: 10px 0;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .projectcards h5 {
+            margin: 8px 0;
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+        }
+        .projectcards p {
+            margin: 8px 0;
+            font-size: 0.9rem;
+            color: #333;
+            text-align: justify;
+            flex-grow: 1;
+        }
+        .projectcards .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+        }
+        .projectcards .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: rgb(50, 50, 92);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .projectcards .buttons a:hover {
+            background-color: rgb(80, 80, 120);
+            transform: scale(1.05);
+        }
+        .projectcards:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+            background-color: #f8f8f8;
+        }
+        @media (max-width: 900px) {
+            .projectcards {
+                flex: 1 1 45%;
+                max-width: 45%;
+                height: 450px; /* Adjust height for smaller screens */
+            }
+        }
+        @media (max-width: 600px) {
+            .projectcards {
+                flex: 1 1 100%;
+                max-width: 100%;
+                height: auto; /* Adjust height for mobile screens */
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="projects ">
+    <div class="projects">
         <div class="projectcards">
             <img src="jkprojectpreview.jpeg" alt="project 1" />
             <h3>J&K tourism Website</h3>
             <h5>WEB</h5>
             <p>I created a dynamic tourism website utilizing various web development tools, including PHP for server-side scripting and database connectivity for managing user data and content. The project involved designing a user-friendly interface, implementing robust backend functionalities, and ensuring seamless interaction between the frontend and the database. While the demo showcases the site's primary features, some functionalities, such as login, are not demonstrated due to security reasons. This project highlights my proficiency in full-stack web development and my ability to create interactive, data-driven web applications.</p>
-            <a href="https://simarjeetxsingh.github.io/J-K-Tourism-Website1/" target="_blank" rel="noopener noreferrer">View Demo</a>
-            or
-            <a href="https://github.com/SimarjeetxSingh/J-K-Tourism-Website1" target="_blank" rel="noopener noreferrer" >View Code</a>
+            <div class="buttons">
+                <a href="https://simarjeetxsingh.github.io/J-K-Tourism-Website1/" target="_blank" rel="noopener noreferrer">View Demo</a>
+                <a href="https://github.com/SimarjeetxSingh/J-K-Tourism-Website1" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
         </div>
-         <div class="projectcards ">
+        <div class="projectcards">
             <img src="movieproject.jpg" alt="project 2" />
             <h3>Movie Recommendation System</h3>
             <h5>Machine Learning</h5>
             <p>ONGOING...</p>
-            <a href="https://github.com/SimarjeetxSingh/SimarjeetxSingh" target="_blank" rel="noopener noreferrer">View Demo</a>
-             or
-              <a href="https://github.com/SimarjeetxSingh/SimarjeetxSingh" target="_blank" rel="noopener noreferrer" >View Code</a>
+            <div class="buttons">
+                <a href="https://github.com/SimarjeetxSingh/SimarjeetxSingh" target="_blank" rel="noopener noreferrer">View Demo</a>
+                <a href="https://github.com/SimarjeetxSingh/SimarjeetxSingh" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
         </div>
-        <div class="projectcards ">
+        <div class="projectcards">
             <img src="portfoliologo.jpeg" alt="project 3" />
             <h3>Personal Portfolio</h3>
             <h5>Portfolio website</h5>
-            <p>I developed a personal portfolio website using various web development tools. The project involved creating a visually appealing and user-friendly interface to showcase my work and skills. The demo highlights the primary features of the site. This project showcases my web development expertise and ability to create professional, interactive web applications.ONGOING...</p>
-            <a href="https://simarjeetxsingh.github.io/SimarjeetPortfolio_1/" target="_blank" rel="noopener noreferrer">View Demo</a>
-            or
-            <a href="https://github.com/SimarjeetxSingh/SimarjeetPortfolio_1" target="_blank" rel="noopener noreferrer" >View Code</a>
+            <p>I developed a personal portfolio website using various web development tools. The project involved creating a visually appealing and user-friendly interface to showcase my work and skills. The demo highlights the primary features of the site. This project showcases my web development expertise and ability to create professional, interactive web applications. ONGOING...</p>
+            <div class="buttons">
+                <a href="https://simarjeetxsingh.github.io/SimarjeetPortfolio_1/" target="_blank" rel="noopener noreferrer">View Demo</a>
+                <a href="https://github.com/SimarjeetxSingh/SimarjeetPortfolio_1" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
         </div>
         <div class="projectcards">
             <img src="python3.png" alt="project 4" />
             <h3>Akinator, Marvel Movie Character Creator!</h3>
             <h5>Python</h5>
             <p>A simple and fun script designed to match you with a character from the Avengers based on your answers to a series of questions.</p>
-            <a href="https://simarjeetxsingh.github.io/Akinator_style_game/" target="_blank" rel="noopener noreferrer">View Demo</a>
-            or
-             <a href="https://github.com/SimarjeetxSingh/Akinator_style_game" target="_blank" rel="noopener noreferrer" >View Code</a>
+            <div class="buttons">
+                <a href="https://simarjeetxsingh.github.io/Akinator_style_game/" target="_blank" rel="noopener noreferrer">View Demo</a>
+                <a href="https://github.com/SimarjeetxSingh/Akinator_style_game" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
         </div>
-
         <div class="projectcards">
             <img src="amazon_logo.png" alt="project 5" />
             <h3>Amazon Home Page Clone</h3>
             <h5>WEB</h5>
             <p>I've created a simple & well-designed clone of the Amazon shopping site's landing page to practice and implement HTML structuring and CSS properties, significantly enhancing the user experience.</p>
-            <a href="https://simarjeetxsingh.github.io/Amazon-clone/" target="_blank" rel="noopener noreferrer">View Demo</a>
-            or
-             <a href="https://github.com/SimarjeetxSingh/Amazon-clone" target="_blank" rel="noopener noreferrer" >View Code</a>
+            <div class="buttons">
+                <a href="https://simarjeetxsingh.github.io/Amazon-clone/" target="_blank" rel="noopener noreferrer">View Demo</a>
+                <a href="https://github.com/SimarjeetxSingh/Amazon-clone" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
         </div>
-       
     </div>
 </body>
 </html>
