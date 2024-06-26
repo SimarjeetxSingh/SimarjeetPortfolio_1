@@ -40,12 +40,12 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
-            background-color: #BFF098;
+            background-color: #ded4d4;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
         .projectcards img {
             width: 100%;
@@ -66,11 +66,10 @@
         }
         .projectcards p {
             margin: 8px 0;
-            font-size: 0.9rem;
+            font-size: 0.5rem;
             color: #333;
             text-align: justify;
             flex-grow: 1;
-            object-fit: contain;
         }
         .projectcards .buttons {
             display: flex;
@@ -93,9 +92,9 @@
             transform: scale(1.05);
         }
         .projectcards:hover {
-            box-shadow: 0 8px 16px #D74177;
+            box-shadow: 4px 8px 12px #D74177;
             transform: scale(1.05);
-            background-color: #6FD6FF;
+            background-color: #fff6f6;
         }
         @media (max-width: 900px) {
             .projectcards {
