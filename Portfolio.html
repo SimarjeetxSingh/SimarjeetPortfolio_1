@@ -78,8 +78,24 @@
 
                 Hi, My name is  <span class="aqua">SIMARJEET</span> 
                 <div>and I am a passionate</div>
-                <div style="color:rgb(13, 16, 15); font-family:cursive ;">Web Developer
-                </div>
+                <div style="color:rgb(13, 16, 15); font-family:cursive ;" class="sec-text">  </div>
+    </div>
+    <script>
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Data Analyst";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Web Developer";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Programmer";
+            }, 8000); //1s = 1000 milliseconds
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>    
         </div>
        </section>  
 
@@ -353,7 +369,7 @@
 
       <div class="footer-rights">
         Copyright &#169; www.simarjeetsportfolio.com
-| All rights reserved *        </div>
+| All rights reserved * @simarxjeet      </div>
 
 </footer>
 
