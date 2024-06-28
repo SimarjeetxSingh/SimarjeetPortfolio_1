@@ -78,24 +78,26 @@
 
                 Hi, My name is  <span class="aqua">SIMARJEET</span> 
                 <div>and I am a passionate</div>
-                <div style="color:rgb(13, 16, 15); font-family:cursive ;" class="sec-text">  </div>
+               <div class="sec-text"></div>
     </div>
+
     <script>
-        const text = document.querySelector(".sec-text");
+        const textElement = document.querySelector(".sec-text");
         const textLoad = () => {
             setTimeout(() => {
-                text.textContent = "Data Analyst";
+                textElement.textContent = "Data Analyst";
             }, 0);
             setTimeout(() => {
-                text.textContent = "Web Developer";
+                textElement.textContent = "Web Developer";
             }, 4000);
             setTimeout(() => {
-                text.textContent = "Programmer";
-            }, 8000); //1s = 1000 milliseconds
+                textElement.textContent = "Programmer";
+            }, 8000);
         }
         textLoad();
         setInterval(textLoad, 12000);
-    </script>    
+    </script>
+           
         </div>
        </section>  
 
