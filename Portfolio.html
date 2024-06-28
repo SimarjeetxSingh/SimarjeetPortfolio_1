@@ -90,7 +90,7 @@
             textElement.textContent = texts[textIndex];
             textElement.style.animation = 'none';
             textElement.offsetHeight; // Trigger reflow to restart the animation
-            textElement.style.animation = 'typing 4s steps(20, end), blink-caret 0.75s step-end infinite';
+            textElement.style.animation = 'typing 3s steps(20, end), blink-caret 0.75s step-end infinite';
 
             textIndex = (textIndex + 1) % texts.length;
         }
