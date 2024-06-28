@@ -92,6 +92,19 @@ padding: 4px;
     font: weight 100; 
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+.sec-text:before{
+    content: "";
+    border-left: 2px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
 
 /*now shifted to about.html*/
 .aboutsection{
