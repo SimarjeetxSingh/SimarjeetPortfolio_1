@@ -83,19 +83,20 @@
 
     <script>
         const textElement = document.querySelector(".sec-text");
+        const texts = ["Data Analyst", "Web Developer", "Programmer"];
+        let textIndex = 0;
+
         const textLoad = () => {
-            setTimeout(() => {
-                textElement.textContent = "Data Analyst";
-            }, 0);
-            setTimeout(() => {
-                textElement.textContent = "Web Developer";
-            }, 4000);
-            setTimeout(() => {
-                textElement.textContent = "Programmer";
-            }, 8000);
+            textElement.textContent = texts[textIndex];
+            textElement.style.animation = 'none';
+            textElement.offsetHeight; // Trigger reflow to restart the animation
+            textElement.style.animation = 'typing 2s steps(20, end), blink-caret 0.75s step-end infinite';
+
+            textIndex = (textIndex + 1) % texts.length;
         }
+
         textLoad();
-        setInterval(textLoad, 12000);
+        setInterval(textLoad, 2000); // Match the duration of the typing animation
     </script>
            
         </div>
