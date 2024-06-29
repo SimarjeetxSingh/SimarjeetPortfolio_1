@@ -99,7 +99,7 @@ padding: 4px;
             white-space: nowrap;
             display: inline-block;
             position: relative;
-            border-right: 2px solid black;
+           /* border-right: 2px solid black;*/
         }
 
         @keyframes typing {
@@ -107,10 +107,11 @@ padding: 4px;
             to { width: 100%; }
         }
 
-        @keyframes blink-caret {
+       /* @keyframes blink-caret {
             from, to { border-right-color: transparent; }
             50% { border-right-color: black; }
-        }
+        }*/
+
 /*now shifted to about.html*/
 .aboutsection{
     margin: auto;
